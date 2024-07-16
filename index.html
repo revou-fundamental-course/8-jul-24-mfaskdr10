@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="assets/ICON.png" type="png" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator BMI - mfaskdr10</h1>
+    </header>
+    <div class="container">
+      <div class="left">
+        <h3>Kalkulator BMI</h3>
+        <p class="desc">
+          Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+          bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+          menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />
+          Yuk hitung sekarang di kalkulator BMI
+        </p>
+
+        <form>
+          <div class="jenis-kelamin">
+            <label>Jenis Kelamin</label>
+            <div class="radio-button">
+              <div>
+                <input
+                  type="radio"
+                  id="laki"
+                  value="Laki-Laki"
+                  name="jenis-kelamin"
+                /><label for="laki">Laki Laki</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="perempuan"
+                  value="Perempuan"
+                  name="jenis-kelamin"
+                /><label for="perempuan">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="berat-badan">
+            <label for="berat-badan">Berat Badan (kg)</label>
+            <div class="input-berat-badan">
+              <i class="fa-solid fa-weight-scale"></i>
+              <input type="number" id="berat-badan" />
+            </div>
+          </div>
+          <div class="usia">
+            <label for="usia">Usia (tahun)</label>
+            <div class="input-usia">
+              <i class="fa-solid fa-pager"></i>
+              <input type="number" id="usia" />
+            </div>
+          </div>
+          <div class="tinggi-badan">
+            <label for="tinggi-badan">Tinggi Badan (cm)</label>
+            <div class="input-tinggi-badan">
+              <i class="fa-solid fa-ruler"></i>
+              <input type="number" id="tinggi-badan" />
+            </div>
+          </div>
+
+          <button type="submit" class="primary-btn" id="hitung-bmi">
+            Hitung BMI
+          </button>
+          <button class="secondary-btn" id="reset">Reset</button>
+        </form>
+        <article>
+          <h2>Keunggulan Fitur</h2>
+          <ol>
+            <li>Menghitung berat badan</li>
+            <li>Menentukan kategori berat badan ideal atau tidak</li>
+            <li>Mempersiapkan program penurunan berat badan</li>
+          </ol>
+        </article>
+      </div>
+      <div class="right">
+        <h3>Hasil</h3>
+        <div class="hasil">
+          <h4 id="keterangan">
+            Anda belum memasukkan nilai berat badan dan tinggi badan
+          </h4>
+          <p id="bmi">00.0</p>
+        </div>
+        <h4 id="status"></h4>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
